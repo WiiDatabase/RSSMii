@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<app version="1">
+  <name>RSSMii</name>
+  <coder>WiiDatabase.de, RiiConnect24, main()</coder>
+  <version>1.4</version>
+  <release_date>20190509000000</release_date>
+  <short_description>Subscribe to RSS-Feeds!</short_description>
+  <long_description>With RSSMii you can subscribe to RSS-Feeds right on your Wii! And you will receive updates as messages at the Wii message board!
+The Homebrew reads a "feeds.xml" from the root of your SD Card and subscribes to all the feeds listed there while all previous subscriptions will be removed.
+So you can actually just update the feeds.xml if you want to change your subscriptions and rssmii will write the changes to the NAND of your Wii!
+
+This is a modification by WiiDatabase.de.</long_description>
+</app>
