@@ -164,7 +164,7 @@ void AddJobs() {
         int offset = 0;
         offset = snprintf(jobs[i].final_url, MAX_BUF, "http://u.wiidb.de/rssmii/rss_displayer.php?feedurl=%s", url_encode(jobs[i].url, _buffer, MAX_BUF));
         snprintf(jobs[i].final_url + offset, MAX_BUF - offset, "&title=%s", url_encode(jobs[i].name, _buffer, MAX_BUF));
-        ret = WC24_CreateRecord(&nwc24record, &nwc24entry, (u32)rssmiititleid, rssmiititleid, 0x4645, WC24_TYPE_MSGBOARD, WC24_RECORD_FLAGS_DEFAULT, WC24_FLAGS_HB, which, 0x5a0, 0, jobs[i].final_url, NULL);
+        ret = WC24_CreateRecord(&nwc24record, &nwc24entry, (u32)rssmiititleid, rssmiititleid, 0x4645, WC24_TYPE_MSGBOARD, WC24_RECORD_FLAGS_DEFAULT, WC24_FLAGS_HB, which, 0x5a0, 32767, jobs[i].final_url, NULL);
         if (ret < 0) {
                 printf("ERROR: WC24_CreateRecord returned %d\n", ret);
         }
