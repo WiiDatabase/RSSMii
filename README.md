@@ -21,6 +21,11 @@ To remove everything, just run the [RSSMii Remover](https://github.com/WiiDataba
 </rss>
 ```
 
+NOTE: For special characters you need to use a CDATA tag:
+```xml
+<feed name="Example-Feed"><![CDATA[http://example.com/rss-feed&someparam=true]]></feed>
+```
+
 ## Compilation
 1. Run `make` and `make install` in our [libwc24 fork](https://github.com/WiiDatabase/wmb-asm/tree/master/libwc24)
 2. Install mxml from the devkitPro Pacman repository
